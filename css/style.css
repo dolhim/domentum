@@ -1,3 +1,112 @@
+html, body, .container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
 .hidden {
     display: none;
+}
+
+.bgimage {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    resize: auto;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .above {
+    height: 30%;
+}
+
+.container .top {
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.container .bottom {
+    display: flex;
+    justify-content: flex-end;
+    height: 90px;
+}
+
+input {
+    width: 50%;
+    padding: var(--input-padding);
+    margin: auto;
+    display: block;
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    font-size: 1.8em;
+    line-height: 1.2;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    transition: border-color .2s ease;
+}
+input::placeholder {
+    color: white;
+}
+
+#login-form button {
+    display: none;
+}
+
+#todo-list {
+    overflow: scroll;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#todo-list button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: transparent;
+    text-shadow: 0 0 0 white;
+}
+
+#greeting, #quotes {
+    text-align: center;
+}
+
+#clock {
+    font-size: 800%;
+    font-weight: 600;
+    text-align: center;
 }

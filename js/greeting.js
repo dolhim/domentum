@@ -17,7 +17,7 @@ if (savedUserName === null) {
 
 function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerHTML = `Hello ${username}`;
+    greeting.innerHTML = `안녕하세요. ${username}.`;
 }
 
 function onSubmit(event) {
