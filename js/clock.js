@@ -1,4 +1,4 @@
-const clock = document.querySelector('span#clock');
+const clock = document.querySelector('span#clock'); 
 
 setInterval(
     paintClock
